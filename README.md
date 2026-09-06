@@ -35,6 +35,8 @@ npx -y earn-bounty-scanner
 
 Public `superteam.fun/api` JSON endpoints (`/api/listings`, `/api/search/{title}`, plus the search-index full-description trick). Plain `fetch`, no auth, no secrets, no scraping of HTML pages. Requests are read-only.
 
+Full `/api` endpoints reference: [superteam-earn-api.html](https://jayjex.github.io/matchbook-labs/superteam-earn-api.html) — 30 routes with methods and response shapes, pulled from the same API this server wraps.
+
 Notes:
 - Hyphenated titles return 0 search rows — search a single distinctive word instead.
 - The feed caps `take` server-side; pages beyond 1 are not exposed yet.
