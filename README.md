@@ -37,6 +37,8 @@ Public `superteam.fun/api` JSON endpoints (`/api/listings`, `/api/search/{title}
 
 Full `/api` endpoints reference: [superteam-earn-api.html](https://jayjex.github.io/matchbook-labs/superteam-earn-api.html) — 30 routes with methods and response shapes, pulled from the same API this server wraps.
 
+A static snapshot of 28 Earn listings lives in the [jayjex Data Vault](https://jayjex.github.io/data-vault/) (`earn-bounties` dataset, free samples included).
+
 Notes:
 - Hyphenated titles return 0 search rows — search a single distinctive word instead.
 - The feed caps `take` server-side; pages beyond 1 are not exposed yet.
