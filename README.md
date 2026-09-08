@@ -14,9 +14,19 @@ MCP server exposing **live Solana bounties** from [Superteam Earn](https://super
 
 ## Usage (stdio)
 
+From GitHub (not on npm yet — pulls this repo):
+
 ```bash
-npx -y earn-bounty-scanner
+npx -y github:jayjex/earn-bounty-scanner
 ```
+
+npm 12 refuses git-based installs by default (`EALLOWGIT`). Pass the flag through npx:
+
+```bash
+npx --allow-git=all -y github:jayjex/earn-bounty-scanner
+```
+
+or set `allow-git=github.com` once in your `~/.npmrc`. npm 10 and 11 need no flag.
 
 ### Claude Desktop / Cursor / any MCP client
 
@@ -25,7 +35,7 @@ npx -y earn-bounty-scanner
   "mcpServers": {
     "earn-bounty-scanner": {
       "command": "npx",
-      "args": ["-y", "earn-bounty-scanner"]
+      "args": ["--allow-git=all", "-y", "github:jayjex/earn-bounty-scanner"]
     }
   }
 }
